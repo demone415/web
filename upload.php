@@ -10,7 +10,7 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 	echo "The file ".  basename( $_FILES['uploadedfile']['name']). 
     	" has been uploaded";
     chmod ("uploads/".basename( $_FILES['uploadedfile']['name']), 0644);
-	$file_path = $file_path . basename( $_FILES['uploadedfile']['name']);
+//	$file_path = $file_path . basename( $_FILES['uploadedfile']['name']);
 //	echo $file_path;
 	
 } else {
